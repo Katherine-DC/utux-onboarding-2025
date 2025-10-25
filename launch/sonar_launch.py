@@ -9,4 +9,10 @@ def generate_launch_description():
             executable='sonar_pub',
             name='SonarPublisher'
         )
+
+        Node(
+            package='sonar',
+            namespace='utux/sensor',
+            executable='sonar_sub',
+            name='SonarSubscriber')
     ])
